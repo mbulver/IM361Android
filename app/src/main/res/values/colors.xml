@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#00574B</color>
-    <color name="colorAccent">#D81B60</color>
+    <color name="colorPrimary">#90D4EE</color>
+    <color name="colorPrimaryDark">#3E6A7C</color>
+    <color name="colorAccent">#4EB9C2</color>
+    <color name="colorBackground">#9ECADB</color>
+    <color name="planmoRed">#5B99F1</color>
+    <color name="planmoBlue">#F36358</color>
+    <color name="planmoYellow">#FDF187</color>
+    <color name="planmoGreen">#63BE69</color>
 </resources>
