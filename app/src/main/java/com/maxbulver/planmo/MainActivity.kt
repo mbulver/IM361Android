@@ -1,5 +1,7 @@
 package com.maxbulver.planmo
 
+import android.app.ActivityOptions
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -9,23 +11,19 @@ import com.google.android.gms.maps.GoogleMap
 import com.google.android.gms.maps.OnMapReadyCallback
 import com.google.android.gms.maps.SupportMapFragment
 
-class MainActivity : AppCompatActivity(), OnMapReadyCallback {
-    override fun onMapReady(map: GoogleMap?) {
-        Log.i("Planmo","It's map time baby")
-    }
-
-    var counter = 0
+class MainActivity : AppCompatActivity(){
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        val myButton: Button = findViewById(R.id.my_button)
+        val myButton: Button = findViewById(R.id.myButton)
+        val myText: TextView = findViewById(R.id.myText)
+        val intent = Intent(this, ScheduleCreation::class.java)
+        startActivity(intent)
         myButton.setOnClickListener {
-            counter++
-            myText.text = resources.getQuantityString(R.plurals.I_Been_Clicked, counter, counter)
+            val intent = Intent(this, ScheduleCreation::class.java)
+            val options = ActivityOptions.makeSceneTransitionAnimation(this, myText, "my_text_view")
+            startActivity(intent, options.toBundle())
         }
-        val mapFragment = supportFragmentManager.findFragmentById(R.id.my_map_view) as SupportMapFragment
-        mapFragment.getMapAsync(this)
-
     }
 }

@@ -5,4 +5,5 @@
         <item quantity="other">I\'ve been depressed %d times today!</item>
     </plurals>
     <string name="button">Button</string>
+    <string name="title_activity_schdeule_creation">SchdeuleCreation</string>
 </resources>
