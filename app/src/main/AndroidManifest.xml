@@ -15,12 +15,28 @@
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
-
         </activity>
 
+        <activity android:name=".MasterPage"
+                  android:parentActivityName=".MainActivity"/>
+        <activity android:name=".ClassTwo"
+                  android:parentActivityName=".MainActivity"/>
+
+        <activity android:name=".EngClass"
+                  android:parentActivityName=".MainActivity"/>
+
         <activity android:name=".ScheduleCreation"
-                  android:parentActivityName=".MainActivity"
-        />
+                  android:parentActivityName=".ScheduleName"/>
+
+        <activity android:name=".ScheduleName"
+                  android:parentActivityName=".MasterPage"/>
+
+        <activity android:name=".TaskCreation"
+                  android:parentActivityName=".MainActivity"/>
+
+        <activity android:name=".TaskView"
+                  android:parentActivityName=".ClassTwo"/>
+
     </application>
 
 </manifest>

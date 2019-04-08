@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="22dp"
+    >
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" tools:layout_editor_absoluteY="33dp"
+                tools:layout_editor_absoluteX="156dp" android:gravity="center" android:layout_marginStart="150dp">
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" android:id="@+id/textView11"
+                    android:fontFamily="sans-serif-black" android:textSize="20sp" tools:layout_editor_absoluteY="288dp"
+                    tools:layout_editor_absoluteX="0dp" android:layout_weight="1" android:text="@string/task_creation"/>
+        </LinearLayout>
+        <TextView
+                android:text="@string/event_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/textView7"
+                android:fontFamily="sans-serif-black" android:textSize="20sp" tools:layout_editor_absoluteY="288dp"
+                tools:layout_editor_absoluteX="0dp"/>
+
+        <EditText android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:inputType="text"
+                  android:id="@+id/eventName"
+                  android:hint="@string/task_name"
+                  android:text="@string/task_name" android:autofillHints="" tools:targetApi="o"/>
+        <TextView
+                android:text="@string/priority_level"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/textView5"
+                android:fontFamily="sans-serif-black" android:textSize="20sp" tools:layout_editor_absoluteY="288dp"
+                tools:layout_editor_absoluteX="0dp" android:layout_marginTop="20dp"/>
+        <Spinner
+                android:id="@+id/prioritySpinner"
+                android:layout_width="404dp"
+                android:layout_height="50dp" tools:layout_editor_absoluteY="315dp"
+                tools:layout_editor_absoluteX="0dp"/>
+        <TextView
+                android:text="@string/event_type"
+                android:layout_width="match_parent"
+                android:layout_height="36dp" android:id="@+id/textView4"
+                android:fontFamily="sans-serif-black" android:textSize="20sp" tools:layout_editor_absoluteY="139dp"
+                tools:layout_editor_absoluteX="0dp" android:layout_marginTop="20dp"/>
+        <Spinner
+                android:id="@+id/eventSpinner"
+                android:layout_width="404dp"
+                android:layout_height="51dp" tools:layout_editor_absoluteY="190dp"
+                tools:layout_editor_absoluteX="0dp"/>
+        <TextView
+                android:text="@string/date"
+                android:layout_width="match_parent"
+                android:layout_height="36dp" android:id="@+id/textView16"
+                android:fontFamily="sans-serif-black" android:textSize="20sp" tools:layout_editor_absoluteY="139dp"
+                tools:layout_editor_absoluteX="0dp" android:layout_marginTop="20dp"/>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <Spinner
+                    android:id="@+id/dateSpinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" tools:layout_editor_absoluteY="315dp"
+                    tools:layout_editor_absoluteX="0dp" android:layout_weight="1"/>
+            <Spinner
+                    android:id="@+id/date2Spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" tools:layout_editor_absoluteY="315dp"
+                    tools:layout_editor_absoluteX="0dp" android:layout_weight="1"/>
+        </LinearLayout>
+        <TextView
+                android:text="@string/time"
+                android:layout_width="match_parent"
+                android:layout_height="36dp" android:id="@+id/textView8"
+                android:fontFamily="sans-serif-black" android:textSize="20sp" tools:layout_editor_absoluteY="139dp"
+                tools:layout_editor_absoluteX="0dp" android:layout_marginTop="20dp"/>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            <Spinner
+                    android:id="@+id/timeSpinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp" tools:layout_editor_absoluteY="315dp"
+                    tools:layout_editor_absoluteX="0dp" android:layout_weight="1"/>
+            <TextView
+                    android:text="@string/colon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/textView9" android:layout_weight="1"
+                    android:textSize="24sp" android:fontFamily="sans-serif-black"/>
+            <Spinner
+                    android:id="@+id/time2Spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp" tools:layout_editor_absoluteY="315dp"
+                    tools:layout_editor_absoluteX="0dp" android:layout_weight="1"/>
+            <Spinner
+                    android:id="@+id/daySpinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" tools:layout_editor_absoluteY="315dp"
+                    tools:layout_editor_absoluteX="0dp" android:layout_weight="1"/>
+        </LinearLayout>
+        <Button
+                android:layout_height="0dp"
+                android:id="@+id/mainButton"
+                android:background="@color/planmoRed"
+                android:layout_weight="1" android:layout_width="wrap_content"
+                android:text="@string/add_task" tools:layout_editor_absoluteY="683dp"
+                tools:layout_editor_absoluteX="68dp"
+                android:layout_marginStart="250dp"/>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

@@ -1,9 +1,37 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">Planmo</string>
-    <plurals name="I_Been_Clicked">I\'ve been clicked!
-        <item quantity="one">I\'ve been depressed %d time today!</item>
-        <item quantity="other">I\'ve been depressed %d times today!</item>
-    </plurals>
-    <string name="button">Button</string>
-    <string name="title_activity_schdeule_creation">SchdeuleCreation</string>
+    <string name="master">Master</string>
+    <string name="eng_306">ENG 306</string>
+    <string name="i_m_355">I M 355</string>
+    <string name="i_m_361">I M 361</string>
+    <string name="todo">todo</string>
+    <string name="reminji">reminji</string>
+    <string name="task_creation">Task Creation</string>
+    <string name="priority_level">Priority Level</string>
+    <string name="event_type">Event Type</string>
+    <string name="date">Date</string>
+    <string name="event_name">Event Name</string>
+    <string name="time">Time</string>
+    <string name="colon">:</string>
+    <string name="add_task">add</string>
+    <string name="taskname">taskname</string>
+    <string name="task_name">task name</string>
+    <string name="yourtaskname">yourtaskname</string>
+    <string name="customize_your_schedule">Customize Your Schedule</string>
+    <string name="complete">Complete</string>
+    <string name="select_a_schedule_type">Select A Schedule Type</string>
+    <string name="select_a_reminji">Select A Reminji</string>
+    <string name="statusbar">statusbar</string>
+    <string name="redbox">redbox</string>
+    <string name="greenbox">greenbox</string>
+    <string name="bluebox">bluebox</string>
+    <string name="yellowbox">yellowbox</string>
+    <string name="name_your_schedule">Name Your Schedule</string>
+    <string name="next">Next</string>
+    <string name="back">Back</string>
+    <string name="meeting_with_david">Meeting With David</string>
+    <string name="high">High !!!</string>
+    <string name="academic">Academic</string>
+    <string name="_12_15_pm">12:15 PM</string>
+
 </resources>

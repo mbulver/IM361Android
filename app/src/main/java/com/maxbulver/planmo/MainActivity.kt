@@ -7,23 +7,33 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Button
 import android.widget.TextView
-import com.google.android.gms.maps.GoogleMap
-import com.google.android.gms.maps.OnMapReadyCallback
-import com.google.android.gms.maps.SupportMapFragment
 
-class MainActivity : AppCompatActivity(){
+
+class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        val myButton: Button = findViewById(R.id.myButton)
-        val myText: TextView = findViewById(R.id.myText)
-        val intent = Intent(this, ScheduleCreation::class.java)
-        startActivity(intent)
-        myButton.setOnClickListener {
-            val intent = Intent(this, ScheduleCreation::class.java)
-            val options = ActivityOptions.makeSceneTransitionAnimation(this, myText, "my_text_view")
-            startActivity(intent, options.toBundle())
+        val masterButton: Button = findViewById(R.id.masterButton)
+        masterButton.setOnClickListener {
+            val intent = Intent(this, MasterPage::class.java)
+            startActivity(intent)
+        }
+        val engButton: Button = findViewById(R.id.engButton)
+        engButton.setOnClickListener {
+            val intent = Intent(this, EngClass::class.java)
+            startActivity(intent)
+        }
+        val twoButton: Button = findViewById(R.id.twoButton)
+        twoButton.setOnClickListener {
+            val intent = Intent(this, ClassTwo::class.java)
+            startActivity(intent)
+        }
+        val taskButton: Button = findViewById(R.id.taskButton)
+        taskButton.setOnClickListener {
+            val intent = Intent(this, TaskCreation::class.java)
+            startActivity(intent)
         }
     }
 }
+
