@@ -12,9 +12,7 @@
             android:layout_height="743dp"
             android:gravity="center_horizontal" android:id="@+id/linearLayout2"
             app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginEnd="5dp" app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="5dp" app:layout_constraintBottom_toBottomOf="parent"
-            android:layout_marginTop="8dp">
+            android:layout_marginTop="22dp">
         <ImageView
                 android:layout_width="396dp"
                 android:layout_height="111dp" app:srcCompat="@drawable/statusbar"
