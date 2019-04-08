@@ -72,6 +72,7 @@
                         tools:layout_editor_absoluteY="337dp" tools:layout_editor_absoluteX="80dp"
                         android:contentDescription="@string/yellowbox"/>
             </LinearLayout>
+
             <ImageView
                     android:layout_width="195dp"
                     android:layout_height="175dp" app:srcCompat="@drawable/reminjis_bunnlesred"
@@ -106,4 +107,5 @@
                 android:layout_height="wrap_content" android:id="@+id/completeButton"
                 android:background="@color/colorAccent" android:layout_marginStart="100dp"/>
     </LinearLayout>
+
 </android.support.constraint.ConstraintLayout>
